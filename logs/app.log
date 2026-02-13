@@ -1,0 +1,11 @@
+18:07:00.536 [main] INFO  fabio.taskmanager.service.TaskService - Creating new Task 1 tarea de programar una nueva tarea {} 
+18:07:00.539 [main] INFO  fabio.taskmanager.service.TaskService - task registrared with success
+18:07:00.539 [main] INFO  fabio.taskmanager.service.TaskService - Listing all tasks
+18:07:00.553 [main] INFO  fabio.taskmanager.Main - Task [id=1, description=tarea de programar una nueva tarea, state=false]
+18:15:28.317 [main] INFO  fabio.taskmanager.service.TaskService - Creating new Task 1 Create new task {} 
+18:15:28.321 [main] INFO  fabio.taskmanager.service.TaskService - task registrared with success
+18:15:28.321 [main] INFO  fabio.taskmanager.service.TaskService - Creating new Task 2 Mark task as complete {} 
+18:15:28.322 [main] INFO  fabio.taskmanager.service.TaskService - task registrared with success
+18:15:28.322 [main] INFO  fabio.taskmanager.service.TaskService - Listing all tasks
+18:15:28.332 [main] INFO  fabio.taskmanager.Main - Task [id=1, description=Create new task, state=false]
+18:15:28.332 [main] INFO  fabio.taskmanager.Main - Task [id=2, description=Mark task as complete, state=false]

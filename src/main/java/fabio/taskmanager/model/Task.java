@@ -1,36 +1,41 @@
 package fabio.taskmanager.model;
 
 public class Task {
-    private String id;
-    private String descripcion;
-    private boolean estado;
+    private int id;
+    private String description;
+    private boolean state;
 
-    public Task(String id, String descripcion, boolean estado) {
+    public Task(int id, String description) {
         this.id = id;
-        this.descripcion = descripcion;
-        this.estado = estado;
+        this.description = description;
+        this.state = false;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
-    public String getDescripcion() {
-        return descripcion;
+    public String getdescription() {
+        return description;
     }
-    public boolean isEstado() {
-        return estado;
+    public boolean isstate() {
+        return state;
     }
 
-     public void setId(String id) {
+     public void setId(int id) {
         this.id = id;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public void setdescription(String description) {
+        this.description = description;
     }
 
-    public void setEstado(boolean estado) {
-        this.estado = estado;
+    public void setstate(boolean state) {
+        this.state = state;
+    }
+
+    @Override
+    public String toString() {
+        return "Task [id=" + id + ", description=" + description + ", state=" + state + "]";
     }
 
 
