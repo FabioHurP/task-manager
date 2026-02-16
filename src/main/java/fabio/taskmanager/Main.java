@@ -15,13 +15,13 @@ public class Main {
         TaskService service = new TaskService();
 
         service.createTask(1, "Create new task");
-        service.createTask(2, "Mark task as complete");
+        service.createTask(0, "Mark task as complete");
 
-        service.markTaskComplete(0, false);
+        service.markTaskComplete(2, true);
 
         // service.listAllTask().forEach(tarea -> log.info(tarea.toString()));
         service.listAllTask().forEach(tarea -> log.info("{}", tarea));
-        // service.listAllTask().forEach(log::info);
+
     
     }
 }
