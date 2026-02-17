@@ -21,5 +21,11 @@ public class Main {
         service.markTaskComplete(0, true);
 
         service.listAllTask().forEach(tarea -> log.info("{}", tarea));
+
+        service.markTaskComplete(2, true);
+
+        service.deleteTask(1);
+
+        service.listAllTask().forEach(tarea -> log.info("{}", tarea));
     }
 }

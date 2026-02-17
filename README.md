@@ -22,7 +22,30 @@ Eliminar tarea: Eliminar una tarea de acuerdo al id
 Se ejecuta la clase prinicipal que nos permite llevar a cabo la ejecución de la aplicación y poder observar la creacion tatno de los Log,
 como de cierta informacion por consola
 
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+Prueba final con todas las funcionalidades, donde creamos y listamos las tareas, posteriormente marcamos como completada como completada la segunda tarea la eliminamos la primera y
+por ultimo listamos nuevamente las tareas donde solo se observa la del id 2 y completada
+
+![alt text](image-5.png)
+
+
+Se jecutan las pruebas unitarias
+
+TaskServiceTest.java
+
 ![alt text](image-3.png)
+
+TaskServiceValidationService
+
+![alt text](image-4.png)
+
+
+
 
 
 

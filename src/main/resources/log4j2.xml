@@ -39,7 +39,7 @@
         <Logger name="fabio.taskmanager.service.TaskService" level="DEBUG" additivity="false">
             <AppenderRef ref="TaskServiceFile"/>
         </Logger>
-        <Logger name="fabio.taskmanager.service.TaskValitacionService" level="DEBUG" additivity="false">
+        <Logger name="fabio.taskmanager.service.TaskValidationService" level="DEBUG" additivity="false">
             <AppenderRef ref="ValidationServiceFile"/>
         </Logger>
         <Root level="DEBUG">
