@@ -1,12 +1,19 @@
 package fabio.taskmanager;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
+import java.util.List;
+
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import fabio.taskmanager.exception.TaskNotFoundException;
 import fabio.taskmanager.model.Task;
 import fabio.taskmanager.service.TaskService;
 
@@ -19,25 +26,21 @@ public class TaskServiceTest {
         taskService = new TaskService();
     }
 
-    // @Test
-    // @DisplayName("Should throw exception if can't create new task")
-    // void testShouldThrowExceptionIfCantCreateNewTask() {
-
-    //     Task newTask = new Task(2, "nueva tarea");
-    //     assertThrows(null, null)
-    //     // taskService.createTask(newTask);
-
-    // }
-
     @Test
-    @DisplayName("Should throw exception if can mark task as complete")
-    void markTaskComplete_ShouldNotThrowException_WhenTaskNotExists() {
+    @DisplayName("Should return task when task exist with given id")
+    void testsearchTaskById_WhenTaskExists() {
 
-        TaskService service = new TaskService();
+        Task task1 = new Task(1, "task 1");
+        Task task2 = new Task(2, "task 2");
 
-        assertDoesNotThrow(() -> {
-            service.markTaskComplete(99, true);
-        });
+        taskService.createTask(task1);
+        taskService.createTask(task2);
+
+        Task result = taskService.searchTaskById(2);
+
+        assertNotNull(result);
+        assertEquals(2, result.getId());
+        assertEquals("task 2", result.getdescription());
     }
 
 }

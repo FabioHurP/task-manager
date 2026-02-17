@@ -17,9 +17,11 @@ public class TaskService {
 
     private static final Logger LOG = LoggerFactory.getLogger(TaskService.class);
     private List<Task> tasks = new ArrayList<>();
-    private final TaskValitacionService taskValidation = new TaskValitacionService();
+    private final TaskValidationService taskValidation = new TaskValidationService();
 
-    public void createTask(int id, String description) {
+    public void createTask(Task task) {
+        int id = task.getId();
+        String description = task.getdescription();
         LOG.warn("Creating new Task {} {} ", id, description);
         try {
             validations(id, description);
@@ -30,11 +32,10 @@ public class TaskService {
         } catch (TaskFoundException e) {
             LOG.error("Error creating task with id {}: {}", id, e.getMessage());
         }
-        
     }
 
     public List<Task> listAllTask() {
-        LOG.info("Listing all tasks");
+        LOG.info("Listing all tasks in Console");
         return tasks;
     }
 
@@ -43,7 +44,7 @@ public class TaskService {
         try {
             Task task = searchTaskById(id);
             task.setstate(state);
-            LOG.info("Task {} processed  successfully}", id);
+            LOG.info("Task {} processed  successfully", id);
         } catch (TaskNotFoundException e) {
             LOG.error("Error processing task {}: {}", id, e.getMessage());
         }
@@ -67,15 +68,14 @@ public class TaskService {
                 return task;
             }
         }
-    
-        throw new TaskNotFoundException("The Task with id " + id + " wasn't found.");        
+
+        throw new TaskNotFoundException("The Task with id " + id + " wasn't found.");
     }
 
     public void validations(int id, String description) {
         taskValidation.validateValueId(id);
         taskValidation.validateDescription(description);
-        taskValidation.validateIdMatch(tasks, id);        
+        taskValidation.validateIdMatch(tasks, id);
     }
-
 
 }

@@ -8,15 +8,15 @@ import fabio.taskmanager.exception.DataInvalidException;
 import fabio.taskmanager.exception.TaskFoundException;
 import fabio.taskmanager.model.Task;
 
-public class TaskValitacionService {
+public class TaskValidationService {
 
-    public static final Logger LOG = LoggerFactory.getLogger(TaskValitacionService.class);
+    public static final Logger LOG = LoggerFactory.getLogger(TaskValidationService.class);
 
 
     public void validateValueId(Integer id) {
         if (id == null || id == 0) {
-            LOG.warn("Validación fallida: id vacío o null");
-            throw new DataInvalidException("El ID de la cita no puede estar vacío.");
+            LOG.warn("Validation failed: empty or null id");
+            throw new DataInvalidException("The appointment identifier can't be empty.");
         }
     }
 
