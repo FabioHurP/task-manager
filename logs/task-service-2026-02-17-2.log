@@ -1,0 +1,9 @@
+2026-02-17 11:54:04.807 [main] WARN  fabio.taskmanager.service.TaskService - Creating new Task 2 task 2 
+2026-02-17 11:54:04.814 [main] INFO  fabio.taskmanager.service.TaskService - task registrared with success
+2026-02-17 11:57:10.820 [main] WARN  fabio.taskmanager.service.TaskService - Creating new Task 1 Create new task 
+2026-02-17 11:57:10.820 [main] INFO  fabio.taskmanager.service.TaskService - task registrared with success
+2026-02-17 11:57:10.821 [main] WARN  fabio.taskmanager.service.TaskService - Creating new Task 2 Mark task as complete 
+2026-02-17 11:57:10.821 [main] INFO  fabio.taskmanager.service.TaskService - task registrared with success
+2026-02-17 11:57:10.821 [main] WARN  fabio.taskmanager.service.TaskService - Init processing  to Mark task as complete
+2026-02-17 11:57:10.821 [main] ERROR fabio.taskmanager.service.TaskService - Error processing task 0: The Task with id 0 wasn't found.
+2026-02-17 11:57:10.822 [main] INFO  fabio.taskmanager.service.TaskService - Listing all tasks in Console
