@@ -13,3 +13,7 @@
 2026-02-17 11:57:10.820 [main] WARN  fabio.taskmanager.service.TaskValidationService - validating task match
 2026-02-17 11:57:10.821 [main] WARN  fabio.taskmanager.service.TaskValidationService - validating task description
 2026-02-17 11:57:10.821 [main] WARN  fabio.taskmanager.service.TaskValidationService - validating task match
+2026-02-17 12:03:11.144 [main] WARN  fabio.taskmanager.service.TaskValidationService - validating task description
+2026-02-17 12:03:11.144 [main] WARN  fabio.taskmanager.service.TaskValidationService - validating task match
+2026-02-17 12:03:11.145 [main] WARN  fabio.taskmanager.service.TaskValidationService - validating task description
+2026-02-17 12:03:11.145 [main] WARN  fabio.taskmanager.service.TaskValidationService - validating task match

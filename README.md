@@ -38,7 +38,7 @@ Se jecutan las pruebas unitarias
 
 TaskServiceTest.java
 
-![alt text](image-3.png)
+![alt text](image-6.png)
 
 TaskServiceValidationService
 
